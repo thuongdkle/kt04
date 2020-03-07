@@ -1,0 +1,10 @@
+Package: kt04
+Title: Assignment4
+Version: 0.0
+Author: kt04
+Description: used to compare and analyze data
+Imports: dplyr, magrittr, tidyr, graphics, tibble
+    knitr,
+    rmarkdown,
+    testthat
+VignetteBuilder: knitr
