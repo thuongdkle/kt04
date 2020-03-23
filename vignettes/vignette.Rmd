@@ -1,0 +1,45 @@
+title: "Assignment4"
+author: "khanhthuong2804"
+date: "17/03/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+The package Assignment4 is mainly used for present summary and plots of public yearly data with CSV files  
+Firstly load in the necessary packages 
+```{r load-in,message=FALSE}
+library(readr)
+library(dplyr)
+library(tidyr)
+library(Assignment4)
+```
+
+
+# `fars_read` function
+to specify the name of CSV file containing data of certain year if you know one
+```{r path}
+accident <- fars_read("accident_2015.csv.bz2")
+accident %>% slice(1:5)
+```
+Practically, this function serves an intermediate function to `fars_read_years` and `fars_map_state` functions.
+
+#  `fars_read_years` function
+```{r read_years}
+years <- c(2013,2014,2015)
+fars_read_years(years)[[1]]
+```
+
+# `fars_summarize` function 
+Initiate the years vector and input it in `fars_summarize`, the result is preseted in a tibble 
+```{r initiate, eval=FALSE}
+fars_summarize_years(years)
+```
+```{r run_summarize, echo=FALSE}
+fars_summarize_years(c(2013,2014,2015))
+```
+
+
