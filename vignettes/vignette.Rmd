@@ -34,12 +34,4 @@ fars_read_years(years)[[1]]
 ```
 
 # `fars_summarize` function 
-Initiate the years vector and input it in `fars_summarize`, the result is preseted in a tibble 
-```{r initiate, eval=FALSE}
-fars_summarize_years(years)
-```
-```{r run_summarize, echo=FALSE}
-fars_summarize_years(c(2013,2014,2015))
-```
-
-
+```fars_summarize_years(c(2013,2014,2015))
