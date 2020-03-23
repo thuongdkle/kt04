@@ -1,10 +1,17 @@
-Package: kt04
+Package: Assignment4
 Title: Assignment4
-Version: 0.0
-Author: kt04
+Version: 0.1.0
+Author: khanhthuong2804
 Description: used to compare and analyze data
+
+Encoding: UTF-8
+LazyData: true
 Imports: dplyr, magrittr, tidyr, graphics, tibble
     knitr,
     rmarkdown,
-    testthat
+    testthat 
+    testthat,
+    knitr,
+    rmarkdown
+RoxygenNote: 6.1.1
 VignetteBuilder: knitr
