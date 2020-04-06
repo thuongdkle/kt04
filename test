@@ -1,9 +1,0 @@
-library(testthat)
-library(Assignment4)
-
-##test make_filename
-test_that("make_filename",{
-  year <- 2014
-  name_make <- Assignment4::make_filename(year)
-  expect_that(name_make,equals("accident_2015.csv.bz2"))
-})
