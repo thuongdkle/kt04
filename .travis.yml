@@ -1,3 +1,7 @@
 language: R
 catche: packages
 https://travis-ci.com/khanhthuong2804/kt04
+library(devtools)
+use_travis()
+use_github()
+use_git()
